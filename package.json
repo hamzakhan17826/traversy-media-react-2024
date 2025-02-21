@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch public/jobs.json --port 8000",
+    "server": "json-server --watch public/jobs.json --host 0.0.0.0 --port $PORT",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
