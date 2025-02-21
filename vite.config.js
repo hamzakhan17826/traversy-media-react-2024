@@ -31,4 +31,5 @@ export default defineConfig({
       },
     },
   },
+  base: "/traversy-media-react-2024/",
 });
