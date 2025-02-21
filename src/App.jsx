@@ -61,7 +61,10 @@ const App = () => {
         <Route path="/add-job" element={<AddJobPage addJob={addJob} />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
-    )
+    ),
+    {
+      basename: import.meta.env.BASE_URL,
+    }
   );
 
   return <RouterProvider router={router} />;

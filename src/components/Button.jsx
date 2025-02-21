@@ -1,14 +1,15 @@
 import React from "react";
 import clsx from "clsx";
+import { NavLink } from "react-router-dom";
 
 const Button = ({ href, className }) => {
   return (
-    <a
-      href={href}
+    <NavLink
+      to={href}
       className={clsx("flex justify-center py-4 px-6 rounded-xl", className)}
     >
       View All Jobs
-    </a>
+    </NavLink>
   );
 };
 
