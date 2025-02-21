@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "server": "json-server --watch src/assets/jobs.json --port 8000",
     "predeploy": "npm run build",
-    "deploy": "gp-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
